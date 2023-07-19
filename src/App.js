@@ -15,6 +15,11 @@ function App() {
     e.preventDefault();
     console.log("주소 변경:", address); // 주소 변경 로직을 추가해주세요.
   };
+  
+  const handleFindButtonClick = () => {
+    // 버튼 클릭 시 동작할 로직을 추가해주세요.
+    console.log("Find 버튼이 클릭되었습니다.");
+  };
 
 
   return (
@@ -37,7 +42,9 @@ function App() {
       <div className="Change">주소 변경하기</div>
       <div className="See">전국의 KINI 매장을 한눈에 !</div>
       <img className="Biglogo" src={biglogo} alt="biglogo" />
-      <div className="Find">KINI<br />매장 찾기</div>
+      <button className="Find" onClick={handleFindButtonClick}>
+        KINI<br />매장 찾기
+      </button>
     </div>
   );
 }
