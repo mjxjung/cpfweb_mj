@@ -74,9 +74,16 @@
 }
 
 .Polygon {
+  background-color: beige;
+  width: 20px;
+  height: 20px;
   position: absolute;
-  top: 322px;
-  left: 42px;
+  cursor: pointer;
+  top: 320px;
+  left: 34px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .Change {

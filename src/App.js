@@ -38,8 +38,14 @@ function App() {
           />
         </form>
       </div>
-      <img className="Polygon" src={polygon} alt="polygon" />
-      <div className="Change">주소 변경하기</div>
+      <button className="Polygon" onClick={handleFindButtonClick}>
+        <img src={polygon} alt="polygon" />
+      </button>
+      {/* <button className="Change" onClick={handleFindButtonClick}>
+        주소 변경하기
+      </button> */}
+      {/* <img className="Polygon" src={polygon} alt="polygon" />*/}
+      <div className="Change">주소 변경하기</div> 
       <div className="See">전국의 KINI 매장을 한눈에 !</div>
       <img className="Biglogo" src={biglogo} alt="biglogo" />
       <button className="Find" onClick={handleFindButtonClick}>
