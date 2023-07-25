@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./App.css";
-import logo from './images/logo.svg';
+import logo from "./images/logo.svg";
 import polygon from "./images/polygon.svg";
 import biglogo from "./images/biglogo.svg";
 
@@ -15,17 +15,20 @@ function App() {
     e.preventDefault();
     console.log("주소 변경:", address); // 주소 변경 로직을 추가해주세요.
   };
-  
+
   const handleFindButtonClick = () => {
     // 버튼 클릭 시 동작할 로직을 추가해주세요.
     console.log("Find 버튼이 클릭되었습니다.");
   };
 
-
   return (
     <div className="App">
       <img className="Logo" src={logo} alt="logo" />
-      <div className="Hello">안녕하세요,<br />XXX 님</div>
+      <div className="Hello">
+        안녕하세요,
+        <br />
+        XXX 님
+      </div>
       <div className="Check">배송받을 주소가 맞는지 확인해 주세요.</div>
       <div className="Grey">
         <form onSubmit={handleAddressSubmit}>
@@ -33,7 +36,6 @@ function App() {
             type="text"
             value={address}
             onChange={handleAddressChange}
-      
             placeholder="새로운 주소를 입력하세요"
           />
         </form>
@@ -45,17 +47,16 @@ function App() {
         주소 변경하기
       </button> */}
       {/* <img className="Polygon" src={polygon} alt="polygon" />*/}
-      <div className="Change">주소 변경하기</div> 
+      <div className="Change">주소 변경하기</div>
       <div className="See">전국의 KINI 매장을 한눈에 !</div>
       <img className="Biglogo" src={biglogo} alt="biglogo" />
       <button className="Find" onClick={handleFindButtonClick}>
-        KINI<br />매장 찾기
+        KINI
+        <br />
+        매장 찾기
       </button>
     </div>
   );
 }
 
 export default App;
-
-
-
